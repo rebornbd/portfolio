@@ -1,0 +1,47 @@
+<header class="resume-header pt-4 pt-md-0">
+    <div class="media flex-column flex-md-row">
+        <img class="mr-3 img-fluid picture mx-auto" src="assets/images/my_image.jpg" alt="" />
+        <div class="media-body p-4 d-flex flex-column flex-md-row mx-auto mx-lg-0">
+            <div class="primary-info">
+                <h1 class="name mt-0 mb-1 text-white text-uppercase text-uppercase">{{ name }}</h1>
+                <div class="title mb-3">{{ position }} @ {{ organization }}</div>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <i class="fa fa-envelope mr-2" data-fa-transform="grow-3"></i> {{ email }}
+                    </li>
+                    <li>
+                        <i class="fa fa-mobile fa-2x mr-2" data-fa-transform="grow-6"></i> {{ phone }}
+                    </li>
+                </ul>
+            </div>
+            <!--//primary-info-->
+            <div class="secondary-info ml-md-auto mt-2">
+                <ul class="resume-social list-unstyled">
+                    <li class="mb-3">
+                        <a [attr.href]="linkedinLink" target="_blank">
+                            <span class="fa-container text-center mr-2"><i class="fa fa-linkedin fa-fw"></i></span>linkedin.com/in/diptadhar
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a [attr.href]="githubLink" target="_blank">
+                            <span class="fa-container text-center mr-2"><i class="fa fa-github fa-fw"></i></span>github.com/dipta-dhar
+                        </a>
+                    </li>
+                    <li class="mb-3">
+                        <a [attr.href]="" target="_blank">
+                            <span class="fa-container text-center mr-2"><i class="fa fa-skype fa-fw"></i></span> {{ skypeID }}
+                        </a>
+                    </li>
+                    <li>
+                        <a [attr.href]="uvaLink" target="_blank">
+                            <span class="fa-container text-center mr-2"><i class="fa fa-codepen fa-fw"></i></span>uva.onlinejudge.org/dipta
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--//secondary-info-->
+        </div>
+        <!--//media-body-->
+    </div>
+    <!--//media-->
+</header>
